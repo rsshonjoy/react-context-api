@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const Home = () => {
-  const [count, setCount] = useState(0)
+const Home = (props) => {
+  const {count, setCount} = props;
   return (
     <div>
       <h1>This is a Home: {count}</h1>
