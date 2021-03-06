@@ -1,11 +1,12 @@
 import React from 'react';
+import Categories from './Categories/Categories';
 
 const Home = (props) => {
-  const {count, setCount} = props;
+  const {count} = props;
   return (
-    <div>
+    <div style= {{border: '1px solid purple'}}>
       <h1>This is a Home: {count}</h1>
-      <button onClick={()=> setCount(count + 1)}>Increment</button>
+      <Categories count={count}></Categories>
     </div>
   );
 };

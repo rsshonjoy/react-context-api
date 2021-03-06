@@ -8,8 +8,8 @@ function App() {
   const [count, setCount] = useState(0)
   return (
     <div>
-      <Header count={count}></Header>
-      <Home count={count} setCount={setCount}></Home>
+      <Header count={count}  setCount={setCount}></Header>
+      <Home count={count}></Home>
       <Shipment></Shipment>
     </div>
   );
